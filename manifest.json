@@ -1,0 +1,15 @@
+{
+  "name": "Chromux",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Group tabs into sessions for easy recall.",
+  "browser_action": {
+    "default_icon": "images/glyphicons_156_show_thumbnails.png",
+    "default_popup": "chromux.html"
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "*://*/*"
+  ]
+}
