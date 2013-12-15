@@ -2,14 +2,20 @@
   "name": "Chromux",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Group tabs into sessions for easy recall.",
-  "browser_action": {
-    "default_icon": "images/glyphicons_156_show_thumbnails.png",
-    "default_popup": "chromux.html"
+  "description": "TMUX style usage of chrome.",
+  "omnibox": {
+    "keyword": "chromux"
+  },
+  "icons": {
+    "16": "images/glyphicons_156_show_thumbnails.png"
+  },
+  "background": {
+    "scripts": ["lib/chromux.js"]
   },
   "permissions": [
-    "tabs",
     "notifications",
+    "storage",
+    "tabs",
     "*://*/*"
   ]
 }
