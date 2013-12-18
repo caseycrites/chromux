@@ -13,7 +13,6 @@
     "scripts": ["lib/chromux.js"]
   },
   "permissions": [
-    "notifications",
     "storage",
     "tabs",
     "*://*/*"
